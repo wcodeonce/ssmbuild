@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.ory//DTD Config 3.0//EN" "htpp://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--mybatis的主配置文件-->
+<configuration>
+
+    <!--设置-->
+    <settings>
+        <!--LOG4j日志工厂实现-->
+        <!--<setting name="logImpl" value="STDOUT_LOGGING"/>-->
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+
+    <!--别名-->
+    <typeAliases>
+        <typeAlias type="com.codeonce.pojo.Books" alias="Books"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper class="com.codeonce.mapper.BookMapper"/>
+    </mappers>
+
+</configuration>
